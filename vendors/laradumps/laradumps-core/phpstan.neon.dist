@@ -1,0 +1,10 @@
+parameters:
+    paths:
+        - src
+    level: max
+    checkMissingIterableValueType: false
+    checkGenericClassInNonGenericObjectType: false
+
+    ignoreErrors:
+        - '#Function [a-zA-Z0-9\\:()]+ has no return type specified.#'
+        - '~^Parameter #2 \$string of function explode expects string, mixed given\.$~'
