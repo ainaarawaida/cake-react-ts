@@ -1,5 +1,6 @@
 import { defineConfig, loadEnv } from 'vite';
 import react from '@vitejs/plugin-react';
+import { svelte } from '@sveltejs/vite-plugin-svelte'
 import liveReload from 'vite-plugin-live-reload';
 import path from 'path';
 
@@ -9,6 +10,7 @@ export default ({ mode }: { mode: string }) => {
   return defineConfig({
     plugins: [
       react(),
+      svelte(),
       liveReload([
         // // edit live reload paths according to your source code
         // // for example:
