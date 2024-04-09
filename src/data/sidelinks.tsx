@@ -45,6 +45,12 @@ export const sidelinks: SideLink[] = [
     icon: <IconChecklist size={18} />,
   },
   {
+    title: 'Material React Table v2',
+    label: '',
+    href: '/mrtv2',
+    icon: <IconChecklist size={18} />,
+  },
+  {
     title: 'Tasks',
     label: '3',
     href: '/tasks',

@@ -52,6 +52,12 @@ const router = createHashRouter([
         }),
       },
       {
+        path: 'mrtv2',
+        lazy: async () => ({
+          Component: (await import('./pages/mrtv2')).default,
+        }),
+      },
+      {
         path: 'tasks',
         lazy: async () => ({
           Component: (await import('./pages/tasks')).default,
