@@ -46,7 +46,7 @@ export default ({ mode }: { mode: string }) => {
     // https://vuejs.org/guide/scaling-up/tooling.html#note-on-in-browser-template-compilation
     resolve: {
       alias: {
-        '@': path.resolve(__dirname),
+        '@': path.resolve(__dirname, './src'),
         '@/public': path.resolve(__dirname, 'public'),
       },
     },

@@ -7,7 +7,7 @@ import './App.css'
 
 function SvelteWrapper(Component:any) {
   return (props:any) => {
-    const svelteRef = useRef();
+    const svelteRef:any = useRef();
     useLayoutEffect(() => {
       while (svelteRef.current?.firstChild) {
         svelteRef.current?.firstChild?.remove();
