@@ -46,6 +46,12 @@ const router = createHashRouter([
         }),
       },
       {
+        path: 'svelte',
+        lazy: async () => ({
+          Component: (await import('./pages/svelte')).default,
+        }),
+      },
+      {
         path: 'tasks',
         lazy: async () => ({
           Component: (await import('./pages/tasks')).default,
